@@ -1,5 +1,5 @@
 //
-//  patViewController.h
+//  patSecondVC.h
 //  pictureAssetTest
 //
 //  Created by Chip Cox on 8/10/14.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CCExtras.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "CCExtras.h"
 
-@interface patViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
-
+@interface patSecondVC : UIViewController
+@property (nonatomic,strong) NSString *transferURL;
 @end

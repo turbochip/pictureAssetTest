@@ -21,6 +21,9 @@
 		F19490231998167E00086A4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19490051998167D00086A4E /* UIKit.framework */; };
 		F194902B1998167E00086A4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F19490291998167E00086A4E /* InfoPlist.strings */; };
 		F194902D1998167E00086A4E /* pictureAssetTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F194902C1998167E00086A4E /* pictureAssetTestTests.m */; };
+		F1949037199819F200086A4E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1949036199819F100086A4E /* AssetsLibrary.framework */; };
+		F194903A19981A6A00086A4E /* patSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F194903919981A6A00086A4E /* patSecondVC.m */; };
+		F194903E19981CBB00086A4E /* CCExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = F194903D19981CBB00086A4E /* CCExtras.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		F19490281998167E00086A4E /* pictureAssetTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pictureAssetTestTests-Info.plist"; sourceTree = "<group>"; };
 		F194902A1998167E00086A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F194902C1998167E00086A4E /* pictureAssetTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pictureAssetTestTests.m; sourceTree = "<group>"; };
+		F1949036199819F100086A4E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F194903819981A6A00086A4E /* patSecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = patSecondVC.h; sourceTree = "<group>"; };
+		F194903919981A6A00086A4E /* patSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = patSecondVC.m; sourceTree = "<group>"; };
+		F194903C19981CBB00086A4E /* CCExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCExtras.h; sourceTree = "<group>"; };
+		F194903D19981CBB00086A4E /* CCExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCExtras.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1949037199819F200086A4E /* AssetsLibrary.framework in Frameworks */,
 				F19490041998167D00086A4E /* CoreGraphics.framework in Frameworks */,
 				F19490061998167D00086A4E /* UIKit.framework in Frameworks */,
 				F19490021998167D00086A4E /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		F19490001998167D00086A4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1949036199819F100086A4E /* AssetsLibrary.framework */,
 				F19490011998167D00086A4E /* Foundation.framework */,
 				F19490031998167D00086A4E /* CoreGraphics.framework */,
 				F19490051998167D00086A4E /* UIKit.framework */,
@@ -112,6 +122,7 @@
 		F19490071998167D00086A4E /* pictureAssetTest */ = {
 			isa = PBXGroup;
 			children = (
+				F194903B19981CBB00086A4E /* ccUtilities */,
 				F19490101998167E00086A4E /* patAppDelegate.h */,
 				F19490111998167E00086A4E /* patAppDelegate.m */,
 				F19490131998167E00086A4E /* Main.storyboard */,
@@ -119,6 +130,8 @@
 				F19490171998167E00086A4E /* patViewController.m */,
 				F19490191998167E00086A4E /* Images.xcassets */,
 				F19490081998167D00086A4E /* Supporting Files */,
+				F194903819981A6A00086A4E /* patSecondVC.h */,
+				F194903919981A6A00086A4E /* patSecondVC.m */,
 			);
 			path = pictureAssetTest;
 			sourceTree = "<group>";
@@ -150,6 +163,15 @@
 				F19490291998167E00086A4E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F194903B19981CBB00086A4E /* ccUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				F194903C19981CBB00086A4E /* CCExtras.h */,
+				F194903D19981CBB00086A4E /* CCExtras.m */,
+			);
+			path = ccUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F194903E19981CBB00086A4E /* CCExtras.m in Sources */,
 				F19490181998167E00086A4E /* patViewController.m in Sources */,
 				F19490121998167E00086A4E /* patAppDelegate.m in Sources */,
+				F194903A19981A6A00086A4E /* patSecondVC.m in Sources */,
 				F194900E1998167E00086A4E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
